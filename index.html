@@ -11,20 +11,47 @@
     Select your workout option
     </p>
     </div>
-	
+	<ul class="workoutTab">
+      <li><a href="#" class="tablinks" onclick="openWorkout(event, 'BenchPress')">Bench Press</a></li>
+      <li><a href="#" class="tablinks" onclick="openWorkout(event, 'DeadLift')">Dead Lift</a></li>
+      <li><a href="#" class="tablinks" onclick="openWorkout(event, 'Squats')">Squats</a></li>
+      <li><a href="#" class="tablinks" onclick="openWorkout(event, 'Curls')">Curls</a></li>
+    </ul>
+    
+    <div id="BenchPress" class="tabcontent">
+      <p>Text for Bench Press</p>
+    </div>
+
+    <div id="DeadLift" class="tabcontent">
+      <p>Text for Dead Lift</p> 
+    </div>
+
+    <div id="Squats" class="tabcontent">
+      <p>Text for Squats</p>
+    </div>
+    
+    <div id="Curls" class="tabcontent">
+      <p>Text for Curl</p>
+    </div>
+    
 	<table>
-        <select>
-          <option value="BenchPress">Bench Press</option>
-          <option value="Squat">Squat</option>
-          <option value="DeadLift">Dead Lift</option>
-          <option value="Curls">Curls</option>
-        </select>
+        
     <td id="weightInfo">Weight:</td>
 	</table>
     <button id="WeightDecrease" class="btn">-</button>
 	<button id="WeightIncrease" class="btn">+</button>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-
+    <script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
+
+
+<!--
+<select id="workout">
+          <option selected="selected" value="BenchPress">Bench Press</option>
+          <option value="Squat">Squat</option>
+          <option value="DeadLift">Dead Lift</option>
+          <option value="Curls">Curls</option>
+        </select>
+-->

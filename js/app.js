@@ -1,4 +1,6 @@
 var weight = 0;
+var workout = "";
+
 // Display weight by adding Input field
 var showWeight = $('#weightInfo').after('<input type="text" id="weight" ' + 'value="' + weight + '">');
 
@@ -13,3 +15,17 @@ var subtractWeight = $('#WeightDecrease').click(function() {
     weight = weight - 5;
     $('#weight').val(weight);
 });  
+
+// Show selected dropdown list and update the default weight
+$('.workout').change(function (){
+    $("select option:selected").each(function() {
+        workout += $(this).val();
+        if( workout == "BenchPress" || workout == "Squat" || workout == "DeadLift" ){
+            $('#weight').val(weight += 45);
+            console.log(weight);
+        } else if ( workout == "Curls" ){
+            $('#weight').val(weight += 10);
+        }
+    }); // end each function
+}); // end change function
+
