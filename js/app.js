@@ -17,8 +17,8 @@ var subtractWeight = $('#WeightDecrease').click(function() {
 });  
 
 // Show selected dropdown list and update the default weight
-$('.workout').change(function (){
-    $("select option:selected").each(function() {
+$('.workoutTab').change(function (){
+    $(".tablinks: active").each(function() {
         workout += $(this).val();
         if( workout == "BenchPress" || workout == "Squat" || workout == "DeadLift" ){
             $('#weight').val(weight += 45);

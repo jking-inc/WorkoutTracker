@@ -85,21 +85,27 @@ Tabs
 **************/
 
 /*** Style the list ***/
-ul.workoutTab {
+div.workoutTab {
     list-style-type: none;
-    margin: 0;
+    width: 50%;
+    margin: auto;
     padding: 0;
     overflow: hidden;
-    border: 1px /*** solid #ccc *** removed ***/;
-    background-color: #fff;
+    border: -1px /*** solid #ccc *** removed ***/;
+    background-color: #009115;
 }
 
 /* Float the list items side by side */
-ul.workoutTab li {float: left;}
+div.workoutTab li {
+    margin: auto;
+    float: left;
+}
 
 /* Style the links inside the list items */
-ul.workoutTab li a {
+div.workoutTab li a {
     display: inline-block;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -109,14 +115,16 @@ ul.workoutTab li a {
 }
 
 /* Change background color of links on hover */
-ul.workoutTab li a:hover {background-color: #42f4aa;}
+div.workoutTab li a:hover {background-color: #28ff48;}
 
 /* Create an active/current tablink class */
-ul.workoutTab li a:focus, .active {background-color: #42f474;}
+div.workoutTab li a:focus, .active {background-color: #28ff48;}
 
 /* Style the tab content */
 .tabcontent {
     display: none;
+    width: 50%;
+    margin: auto;
     padding: 6px 12px;
     border: 1px ; /* solid #ccc *** removed ***/
     border-top: none;
