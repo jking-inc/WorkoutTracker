@@ -1,3 +1,4 @@
+
 function openWorkout(evt, workoutName) {
     // Declare all variables
     var i, tabcontent, tablinks;

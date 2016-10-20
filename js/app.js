@@ -1,18 +1,25 @@
 var weight = 0;
 var workout = "";
 
-// Display weight by adding Input field
-var showWeight = $('#weightInfo').after('<input type="text" id="weight" ' + 'value="' + weight + '">');
+/* Display weight by adding Input field
+var showWeight = $('#chooseWorkout').after('<input type="text" id="weight" ' + 'value="' + weight + '">');
+*/
+
+$('#weight').val(weight);
 
 // Increase weight
-var addWeight = $('#WeightIncrease').click(function() {
-    weight = weight + 5;
+var addWeight = $('.weightIncrease').click(function() {
+        weight = weight + 5;
     $('#weight').val(weight);
 });  
 
 // Decrease weight
-var subtractWeight = $('#WeightDecrease').click(function() {
-    weight = weight - 5;
+var subtractWeight = $('.weightDecrease').click(function() {
+    if(weight <= 0){
+        weight = 0;
+    } else{
+        weight = weight - 5;
+    }
     $('#weight').val(weight);
 });  
 

@@ -10,34 +10,33 @@
     <!--- <p>Select your workout option</p> --->
     </div>
 	<div class="workoutTab">
-      <li><a href="#" class="tablinks" onclick="openWorkout(event, 'BenchPress')">Chest/Back</a></li>
+      <li><a href="#" class="tablinks active" onclick="openWorkout(event, 'BenchPress')">Chest/Back</a></li>
       <li><a href="#" class="tablinks" onclick="openWorkout(event, 'DeadLift')">Arms/Shoulders</a></li>
       <li><a href="#" class="tablinks" onclick="openWorkout(event, 'Squats')">Legs</a></li>
       <li><a href="#" class="tablinks" onclick="openWorkout(event, 'Curls')">Core</a></li>
     </div>
-    
-    <div id="BenchPress" class="tabcontent">
-      <p>Text for Bench Press</p>
+    <div id="chooseWorkout"> 
+        <!--- Hidden Divs --->
+        <div id="BenchPress" class="tabcontent">
+          <p>Text for Bench Press</p>
+        </div>
+        <div id="DeadLift" class="tabcontent">
+          <p>Text for Dead Lift</p> 
+        </div>
+        <div id="Squats" class="tabcontent">
+          <p>Text for Squats</p>
+        </div>
+        <div id="Curls" class="tabcontent">
+          <p>Text for Curl</p>
+        </div>
+        <div id="weightInfo" >
+            <td id="weightInfo">Weight:</td><input type="text" id="weight">
+            <button id="weightInfo" class="weightDecrease">-</button>
+            <button id="weightInfo" class="weightIncrease">+</button>
+        </div>
     </div>
-
-    <div id="DeadLift" class="tabcontent">
-      <p>Text for Dead Lift</p> 
-    </div>
-
-    <div id="Squats" class="tabcontent">
-      <p>Text for Squats</p>
-    </div>
-    
-    <div id="Curls" class="tabcontent">
-      <p>Text for Curl</p>
-    </div>
-    
-	<table>
         
-    <td id="weightInfo">Weight:</td>
-	</table>
-    <button id="WeightDecrease" class="btn">-</button>
-	<button id="WeightIncrease" class="btn">+</button>
+
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
