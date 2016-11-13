@@ -1,0 +1,60 @@
+/************************
+Increase/Decrease weight
+************************/
+button {
+    color: white;
+    background-color: #C62828;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    min-width: 75px;
+}
+
+.weightIncrease .weightDecrease:hover {
+    transform: scale(1.05);
+}
+
+/* Style the button content */
+.workoutButton {
+    width: relative;
+    position: relative;
+    left: -10px;
+    margin: auto;
+    border: 1px ; 
+    border-top: none;
+}
+
+
+/*****************
+Weight display: 
+*****************/
+
+#displayWeight {
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+/***********************
+Workout button content: 
+***********************/
+
+.workoutButton{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding: 6px 12px;
+    border: 1px ; 
+    border-top: none;
+}
+/*
+.buttonContent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+*/

@@ -1,0 +1,70 @@
+html {
+    height: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.header {
+  text-align: left;
+}
+
+#main-content {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px #000;
+    display: inline-block;
+    font-size: 3em;
+    line-height: 1.3em;
+    margin:0;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+
+.header-logo {
+  display: inline-block;
+  height: 4em;
+  vertical-align: top;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    width: 20%;
+    margin: 0 1%;
+    padding: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+  .header {
+    margin-top: 3em;
+  }
+}
+
+.p {
+    position: relative;
+}
+
+/***********
+Nav Bar
+**********
+ 
+ nav.navbar.navbar-inverse {
+  height: 3em;
+ }
+ */

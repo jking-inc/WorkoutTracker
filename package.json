@@ -1,0 +1,22 @@
+{
+  "name": "workouttracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jking-inc/WorkoutTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jking-inc/WorkoutTracker/issues"
+  },
+  "homepage": "https://github.com/jking-inc/WorkoutTracker#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

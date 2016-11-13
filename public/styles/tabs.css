@@ -1,0 +1,47 @@
+/*************
+Tabs
+**************/
+
+/*** Style the list ***/
+div.workoutTab {
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    border: -1px /*** solid #ccc *** removed ***/;
+    background-color: #009115;
+}
+
+/* Float the list items side by side */
+div.workoutTab li {
+    margin: auto;
+    float: left;
+}
+
+/* Style the links inside the list items */
+div.workoutTab li a {
+    display: inline-block;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+div.workoutTab li a:hover {
+    background-color: #28ff48;
+}
+
+/* Create an active/current tablink class */
+a.tablinks.active {
+    background-color: #28ff48;
+}
+
+
+
+
