@@ -1,10 +1,11 @@
 html {
     height: auto;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 body {
-    background-size: contain;
+    background-color: #D2691E;
+    /*background-size: contain;*/
     background-attachment: fixed;
     font-family: sans-serif;
 }
@@ -51,14 +52,22 @@ ul li {
     cursor: pointer;
 }
 
-  .header {
-    margin-top: 3em;
-  }
+.header {
+  margin-top: 3em;
 }
 
-.p {
-    position: relative;
+.jumbotron {
+  color: black;
+  background-color: #D2691E;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
+
+
+
 
 /***********
 Nav Bar

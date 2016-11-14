@@ -21,10 +21,10 @@ div.workoutTab li {
 
 /* Style the links inside the list items */
 div.workoutTab li a {
+    color: black;
     display: inline-block;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;

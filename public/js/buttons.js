@@ -2,23 +2,21 @@ var weight = 0;
 var workout = "";
 var workoutSelection = "";
 
-$('#weight').val(weight);
-
-// Increase weight
-var addWeight = $('.weightIncrease').click(function() {
-        weight = weight + 5;
-    $('#weight').val(weight);
-});  
-
-// Decrease weight
-var subtractWeight = $('.weightDecrease').click(function() {
-    if(weight <= 0){
-        weight = 0;
-    } else{
-        weight = weight - 5;
+// Increasing and Decreasing weight using the + and - buttons
+angular.module('myApp', [])
+  .controller('weightCtrl', ['$scope', function($scope) {
+    $scope.weight = 0;
+    $scope.weightIncrease = function() {
+      $scope.weight += 5;
+    };
+    $scope.weightDecrease = function() {
+        if($scope.weight <= 0){
+        $scope.weight = 0;
+    } else {
+        $scope.weight -= 5;
     }
-    $('#weight').val(weight);
-});  
+    };
+  }]);
 
 // Show workout based off the button selection
 var selectWeight = $('.buttonContent > p').click(function() {
@@ -32,4 +30,7 @@ var selectWeight = $('.buttonContent > p').click(function() {
                 } $('#weight').val(weight);
 });
 
-
+// Button rep functionality
+var repCount = $('#reps > button').click(function() {
+    $(this).addClass("active");
+});

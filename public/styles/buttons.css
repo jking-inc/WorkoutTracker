@@ -2,32 +2,23 @@
 Increase/Decrease weight
 ************************/
 button {
-    color: white;
-    background-color: #C62828;
+    color: black;
+    background-color: #9ACD32;
     border: none;
     border-radius: 5px;
     margin: 0 auto;
-    margin-top: 1em;
-    font-size: 1.2em;
     cursor: pointer;
     transition: all .2s ease-in-out;
-    min-width: 75px;
+    min-width: 25px;
 }
 
-.weightIncrease .weightDecrease:hover {
+.weightDecrease, .weightIncrease  {
+    background-color: #FF0000;
+}
+
+.weightIncrease:hover, .weightDecrease:hover {
     transform: scale(1.05);
 }
-
-/* Style the button content */
-.workoutButton {
-    width: relative;
-    position: relative;
-    left: -10px;
-    margin: auto;
-    border: 1px ; 
-    border-top: none;
-}
-
 
 /*****************
 Weight display: 
@@ -39,6 +30,11 @@ Weight display:
     position: relative;
 }
 
+#weight {
+    background-color: #D2691E;
+    border: none;
+}
+
 /***********************
 Workout button content: 
 ***********************/
@@ -46,15 +42,41 @@ Workout button content:
 .workoutButton{
     width: 50%;
     margin: auto;
+    position: relative;
+    left: -10px;
     text-align: left;
     padding: 6px 12px;
     border: 1px ; 
     border-top: none;
 }
-/*
-.buttonContent {
+
+/***********************
+Rep Button
+***********************/
+
+.repButton.active {
+    background-color: #C62828;
+}
+
+.repButton {
+    color: white;
+    background-color: #A9A9A9;
+    margin: auto;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    
+}
+
+#reps {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    left: -10px;
+    text-align: left;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px ; 
     border-top: none;
-} 
-*/
+}
+

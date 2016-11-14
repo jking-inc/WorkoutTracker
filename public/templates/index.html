@@ -2,13 +2,13 @@
 <html>
 <head>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/styles/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/styles/tabs.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/styles/buttons.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <title>Workout Tracker</title>
 </head>
-<body>
+<body ng-app="myApp">
   <div>
   <div>
   <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
@@ -76,26 +76,23 @@
           <p>Hyperextensions</p>
         </button>
     </div> 
-    <div id="displayWeight">
-      <label id="weightInfo" for="weight">Weight:</label><input type="text" id="weight">
-      <button id="btnDecrease" class="weightDecrease">-</button>
-      <button id="btnIncrease" class="weightIncrease">+</button>
-    </div> 
+    <div id="displayWeight" ng-controller="weightCtrl">
+      <label id="weightInfo" for="weight">Weight: </label><input type="text" id="weight" ng-model="weight">
+      <button id="btnDecrease" class="weightDecrease" ng-click="weightDecrease()">-</button>
+      <button id="btnIncrease" class="weightIncrease" ng-click="weightIncrease()">+</button>
+    </div>
+    <div id="reps">
+      <button id="repOne" class="repButton">5</button>
+      <button id="repTwo" class="repButton">5</button> 
+      <button id="repThree" class="repButton">5</button> 
+      <button id="repFour" class="repButton">5</button> 
+      <button id="repFive" class="repButton">5</button>  
+    </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/buttons.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
-
-
-<!--
-<select id="workout">
-          <option selected="selected" value="BenchPress">Bench Press</option>
-          <option value="Squat">Squat</option>
-          <option value="DeadLift">Dead Lift</option>
-          <option value="Curls">Curls</option>
-        </select>
-->
