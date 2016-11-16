@@ -9,8 +9,8 @@ div.workoutTab {
     margin: auto;
     padding: 0;
     overflow: hidden;
-    border: -1px /*** solid #ccc *** removed ***/;
-    background-color: #009115;
+    border: -1px;
+    background-color: #4169E1;
 }
 
 /* Float the list items side by side */
@@ -21,7 +21,7 @@ div.workoutTab li {
 
 /* Style the links inside the list items */
 div.workoutTab li a {
-    color: black;
+    color: #FFFAF0;
     display: inline-block;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -39,9 +39,5 @@ div.workoutTab li a:hover {
 
 /* Create an active/current tablink class */
 a.tablinks.active {
+    color: black;
     background-color: #28ff48;
-}
-
-
-
-

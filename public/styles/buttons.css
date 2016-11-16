@@ -2,8 +2,8 @@
 Increase/Decrease weight
 ************************/
 button {
-    color: black;
-    background-color: #9ACD32;
+    color: #fff;
+    background-color: #00BFFF;
     border: none;
     border-radius: 5px;
     margin: 0 auto;
@@ -12,16 +12,16 @@ button {
     min-width: 25px;
 }
 
-.weightDecrease, .weightIncrease  {
+#btnDecrease, #btnIncrease  {
     background-color: #FF0000;
 }
 
-.weightIncrease:hover, .weightDecrease:hover {
+#btnIncrease:hover, #btnDecrease:hover {
     transform: scale(1.05);
 }
 
 /*****************
-Weight display: 
+Weight display:
 *****************/
 
 #displayWeight {
@@ -31,12 +31,12 @@ Weight display:
 }
 
 #weight {
-    background-color: #D2691E;
+    background-color: #fff;
     border: none;
 }
 
 /***********************
-Workout button content: 
+Workout button content:
 ***********************/
 
 .workoutButton{
@@ -46,19 +46,28 @@ Workout button content:
     left: -10px;
     text-align: left;
     padding: 6px 12px;
-    border: 1px ; 
+    border: 1px ;
     border-top: none;
+}
+
+button.active {
+    background-color: #28ff48;
+}
+
+button.disabled {
+  background: #eee;
+  color: #aaa;
 }
 
 /***********************
 Rep Button
 ***********************/
 
-.repButton.active {
+#repButton.active {
     background-color: #C62828;
 }
 
-.repButton {
+#repButton {
     color: white;
     background-color: #A9A9A9;
     margin: auto;
@@ -66,7 +75,7 @@ Rep Button
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    
+
 }
 
 #reps {
@@ -76,7 +85,32 @@ Rep Button
     left: -10px;
     text-align: left;
     padding: 6px 12px;
-    border: 1px ; 
+    border: 1px ;
     border-top: none;
 }
 
+/***********************
+Workout Button SCSS
+***********************/
+
+$base: #F8E1C2;
+$button: #3D3240;
+$button-active: #FF735C;
+$margin: 40px;
+
+.buttonContent {
+  border: none;
+  padding: 14px;
+  color: #fff;
+  margin: 0 10px;
+  background: $button;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.active {
+  background: $button-active;
+}
+.disabled {
+  background: #eee;
+  color: #aaa;
+}

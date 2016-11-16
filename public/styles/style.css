@@ -4,14 +4,9 @@ html {
 }
 
 body {
-    background-color: #D2691E;
-    /*background-size: contain;*/
+    /*background-color: #D2691E;*/
     background-attachment: fixed;
     font-family: sans-serif;
-}
-
-.header {
-  text-align: left;
 }
 
 #main-content {
@@ -20,60 +15,12 @@ body {
   margin-bottom: 1em;
 }
 
-h1 {
-    text-shadow: 2px 2px 2px #000;
-    display: inline-block;
-    font-size: 3em;
-    line-height: 1.3em;
-    margin:0;
-    margin-left: 10px;
-    vertical-align: top;
-}
-
-
-.header-logo {
-  display: inline-block;
-  height: 4em;
-  vertical-align: top;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-ul li {
-    list-style: none;
-    width: 20%;
-    margin: 0 1%;
-    padding: 1em;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.header {
-  margin-top: 3em;
-}
-
 .jumbotron {
   color: black;
-  background-color: #D2691E;
+  background-color: #FFF;
   margin: auto;
   text-align: center;
   position: relative;
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
-
-
-
-/***********
-Nav Bar
-**********
- 
- nav.navbar.navbar-inverse {
-  height: 3em;
- }
- */

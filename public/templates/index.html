@@ -20,7 +20,7 @@
   </nav>
   </div>
   <br/>
-    <div class="jumbotron"> 
+    <div class="jumbotron">
       <p>Welcome to my fitness app</p>
     </div>
     </div>
@@ -31,62 +31,62 @@
       <li><a href="#" class="tablinks" onclick="openWorkout(event, 'legs')">Legs</a></li>
       <li><a href="#" class="tablinks" onclick="openWorkout(event, 'core')">Core</a></li>
     </div>
-    <div id="chest" class="workoutButton active"> 
+    <div id="chest" class="workoutButton active">
         <!-- Hidden buttons -->
-        <button id="chest" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Bench Press</p>
         </button>
-        <button id="chest" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Incline Bench Press</p>
         </button>
-        <button id="chest" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Decline Bench Press</p>
         </button>
     </div>
     <div id="legs" class="workoutButton" style="display: none">
-        <button id="legs" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Dead Lifts</p>
         </button>
-        <button id="legs" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Squats</p>
         </button>
-        <button id="legs" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Lunges</p>
         </button>
-    </div> 
+    </div>
     <div id="arms" class="workoutButton" style="display: none">
-        <button id="arms" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Barbell Curls</p>
         </button>
-        <button id="arms" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Tricep Cable Pushdowns</p>
         </button>
-        <button id="arms" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>EZ-Bar Curls</p>
         </button>
-    </div> 
+    </div>
     <div id="core" class="workoutButton" style="display: none">
-        <button id="core" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Situps</p>
         </button>
-        <button id="core" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Crunches</p>
         </button>
-        <button id="core" class="buttonContent">
+        <button id="buttonContent" class="buttonContent">
           <p>Hyperextensions</p>
         </button>
-    </div> 
+    </div>
     <div id="displayWeight" ng-controller="weightCtrl">
       <label id="weightInfo" for="weight">Weight: </label><input type="text" id="weight" ng-model="weight">
       <button id="btnDecrease" class="weightDecrease" ng-click="weightDecrease()">-</button>
       <button id="btnIncrease" class="weightIncrease" ng-click="weightIncrease()">+</button>
     </div>
     <div id="reps">
-      <button id="repOne" class="repButton">5</button>
-      <button id="repTwo" class="repButton">5</button> 
-      <button id="repThree" class="repButton">5</button> 
-      <button id="repFour" class="repButton">5</button> 
-      <button id="repFive" class="repButton">5</button>  
+      <button id="repButton" class="">5</button>
+      <button id="repButton" class="">5</button>
+      <button id="repButton" class="">5</button>
+      <button id="repButton" class="">5</button>
+      <button id="repButton" class="">5</button>
     </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>

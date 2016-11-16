@@ -7,7 +7,7 @@ angular.module('myApp', [])
   .controller('weightCtrl', ['$scope', function($scope) {
     $scope.weight = 0;
     $scope.weightIncrease = function() {
-      $scope.weight += 5;
+      $scope.weight = parseInt($scope.weight) + 5;
     };
     $scope.weightDecrease = function() {
         if($scope.weight <= 0){
@@ -17,6 +17,16 @@ angular.module('myApp', [])
     }
     };
   }]);
+
+  /*
+Change Color of workout button
+  myApp.controller('classCtrl', function ($scope) {
+    $scope.isActive = false;
+  $scope.activeButton = function() {
+    $scope.isActive = !$scope.isActive;
+  }
+});
+*/
 
 // Show workout based off the button selection
 var selectWeight = $('.buttonContent > p').click(function() {
