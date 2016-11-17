@@ -1,0 +1,10 @@
+<div class="item" ng-class="{'editing-item': editing, 'edited': workout.edited, 'completed': workout.completed}" ng-repeat="workout in workouts | orderBy: 'completed' " ng-init="workout.completed = false">
+  <input type="checkbox" ng-model="workout.completed" />
+  <span ng-click="workout.completed = !workout.completed; workout.edited = true"></span>
+  <label ng-hide="editing" ng-click="editing=true">{{workout.name}}</label>
+  <input ng-show="editing" ng-blur="editing = false" class="editing-label" type="text" ng-model="workout.name" ng-change="workout.edited = true"/>
+  <div class="actions">
+    <a href="" ng-click="saveWorkouts()">Save</a>
+    <a href="" class="delete" ng-click="deleteworkout(workout, $index)">Delete</a>
+  </div>
+</div>
