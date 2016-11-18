@@ -2,7 +2,7 @@
 
 var express = require('express');
 var Workout = require('../models/workout');
-//var path =  __dirname + '/public/templates';
+
 var router = express.Router();
 
 router.get('/workouts', function(req, res) {

@@ -1,0 +1,7 @@
+@media (max-width: 1225px) {
+
+#displayWeight, #reps {
+  display: none;
+}
+
+}
