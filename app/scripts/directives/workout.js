@@ -1,6 +1,6 @@
 'use strict';
 
-function WorkoutDirective () {
+function WorkOutDirective () {
   return {
     templateUrl: 'templates/workout.html',
     replace: true,
@@ -8,4 +8,4 @@ function WorkoutDirective () {
   }
 }
 
-module.exports = WorkoutDirective;
+module.exports = WorkOutDirective;

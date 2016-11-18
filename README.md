@@ -15,4 +15,4 @@ To Run the application open a terminal or command prompt and change the director
 
 4) "About" and "Contact" links from the nav bar currently don't work due to an issue with express not able to locate the correct file path to the HTML docs.  
 
-5) Delete feature has not been added at this time.
+5) The app is saving the new workout but it's not saving the text when it's typed in. It's writing a new entry to the database however. Delete feature working at this time.

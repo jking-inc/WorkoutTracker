@@ -78,7 +78,7 @@ webpackJsonp([0],[
 
 	'use strict';
 
-	function WorkoutDirective() {
+	function WorkOutDirective() {
 	  return {
 	    templateUrl: 'templates/workout.html',
 	    replace: true,
@@ -86,7 +86,7 @@ webpackJsonp([0],[
 	  };
 	}
 
-	module.exports = WorkoutDirective;
+	module.exports = WorkOutDirective;
 
 /***/ },
 /* 7 */
@@ -129,8 +129,9 @@ webpackJsonp([0],[
 	function WorkoutCtrl($scope, dataService) {
 
 	  $scope.deleteWorkout = function (workout, index) {
-	    $scope.workouts.splice(index, 1);
-	    dataService.deleteWorkout(workout);
+	    dataService.deleteWorkout(workout).then(function () {
+	      $scope.workouts.splice(index, 1);
+	    });
 	  };
 
 	  $scope.saveWorkouts = function () {
