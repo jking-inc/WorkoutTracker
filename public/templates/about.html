@@ -1,11 +1,14 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/responsiveNav.css" media="screen" title="no title" charset="utf-8">
   <title>Workout Tracker</title>
 </head>
-<body>
-  <div>
-    <ng-include src="'templates/navbar.html'"></ng-include>
+<body ng-app="workoutListApp">
+  <div class="container">
+    <div class="nav">
+      <ng-include src="'templates/navbar.html'"></ng-include>
+    </div>
     <br/>
       <div class="jumbotron">
         <p>
@@ -13,5 +16,7 @@
         </p>
     </div>
   </div>
+  <script src="/scripts/vendor.bundle.js"></script>
+  <script src="/scripts/workout.bundle.js"></script>
 </body>
 </html>

@@ -3,9 +3,12 @@
 var express = require("express");
 var parser = require('body-parser');
 var router = require('./api');
-//var path =  __dirname + '/public/templates';
+//var path =  __dirname;
+var path = require('path');
+var root = path.resolve('./public/templates');
 var app = express();
-//console.log(path);
+console.log(root);
+console.log(path);
 //var path =  __dirname + '/public/templates';
 
 // Require The database
@@ -29,16 +32,14 @@ router.get("/",function(req,res){
   //res.sendFile("/index.html");
 });
 */
-/*
-router.get("/about",function(req,res){
-  res.sendFile(path + "/about.html");
+
+app.get("/about", function(req,res){
+  res.sendFile(root + '/about.html');
 });
 
-router.get("/contact",function(req,res){
-  res.sendFile(path + "/contact.html");
+app.get("/contact", function(req,res){
+  res.sendFile(root + "/contact.html");
 });
-*/
-app.use("/",router);
 
 app.use("*",function(req,res){
   res.sendFile(path + "404.html");

@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 function WeightCtrl ($scope){
   $scope.weight = 0;
     $scope.weightIncrease = function() {
@@ -17,19 +17,3 @@ function WeightCtrl ($scope){
 }
 
 module.exports = WeightCtrl;
-*/
-
-ngular.module('mainApp', [])
-  .controller('weightCtrl', ['$scope', function($scope) {
-    $scope.weight = 0;
-    $scope.weightIncrease = function() {
-      $scope.weight = parseInt($scope.weight) + 5;
-    };
-    $scope.weightDecrease = function() {
-        if($scope.weight <= 0){
-        $scope.weight = 0;
-    } else {
-        $scope.weight -= 5;
-    }
-    };
-  }]);

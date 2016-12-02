@@ -3,9 +3,8 @@
 function WorkoutCtrl ($scope, dataService) {
 
   $scope.deleteWorkout = function(workout, index) {
-    dataService.deleteWorkout(workout).then(function() {
     $scope.workouts.splice(index, 1);
-  });
+    dataService.deleteTodo(todo);
 };
 
   $scope.saveWorkouts = function() {

@@ -7,6 +7,9 @@ function DataService ($http, $q) {
   };
 
   this.deleteWorkout = function(workout) {
+    if (!todo._id) {
+      return $q.resolve();
+    }
     console.log("I deleted the " + workout.name + " workout!");
   };
 

@@ -4,9 +4,11 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <title>Workout Tracker</title>
 </head>
-<body>
-  <div>
-    <ng-include src="'templates/navbar.html'"></ng-include>
+<body ng-app="workoutListApp">
+  <div class="container">
+    <div class="nav">
+      <ng-include src="'templates/navbar.html'"></ng-include>
+    </div>
   <br/>
   <form class="form-horizontal" role="form" style="width: 50%;">
     <div class="form-group">
@@ -43,7 +45,9 @@
             <! Will be used to display an alert to the user>
         </div>
     </div>
-</form>
+  </form>
   </div>
+  <script src="/scripts/vendor.bundle.js"></script>
+  <script src="/scripts/workout.bundle.js"></script>
 </body>
 </html>

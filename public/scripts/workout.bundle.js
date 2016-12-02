@@ -37,6 +37,9 @@ webpackJsonp([0],[
 	  };
 
 	  this.deleteWorkout = function (workout) {
+	    if (!todo._id) {
+	      return $q.resolve();
+	    }
 	    console.log("I deleted the " + workout.name + " workout!");
 	  };
 
@@ -98,6 +101,7 @@ webpackJsonp([0],[
 
 	angular.module('workoutListApp').controller('mainCtrl', __webpack_require__(8));
 	angular.module('workoutListApp').controller('workoutCtrl', __webpack_require__(9));
+	angular.module('workoutListApp').controller('weightCtrl', __webpack_require__(10));
 
 /***/ },
 /* 8 */
@@ -129,9 +133,8 @@ webpackJsonp([0],[
 	function WorkoutCtrl($scope, dataService) {
 
 	  $scope.deleteWorkout = function (workout, index) {
-	    dataService.deleteWorkout(workout).then(function () {
-	      $scope.workouts.splice(index, 1);
-	    });
+	    $scope.workouts.splice(index, 1);
+	    dataService.deleteTodo(todo);
 	  };
 
 	  $scope.saveWorkouts = function () {
@@ -151,6 +154,29 @@ webpackJsonp([0],[
 	}
 
 	module.exports = WorkoutCtrl;
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function WeightCtrl($scope) {
+	  $scope.weight = 0;
+	  $scope.weightIncrease = function () {
+	    $scope.weight = parseInt($scope.weight) + 5;
+	  };
+
+	  $scope.weightDecrease = function () {
+	    if ($scope.weight <= 0) {
+	      $scope.weight = 0;
+	    } else {
+	      $scope.weight -= 5;
+	    }
+	  };
+	}
+
+	module.exports = WeightCtrl;
 
 /***/ }
 ]);
